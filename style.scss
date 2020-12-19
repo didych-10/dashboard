@@ -1,0 +1,600 @@
+@import "reset.scss";
+@font-face {
+    font-family: SegoeUI; 
+    src: url(fonts/SegoeUI.ttf); 
+   }
+.header{
+    height: 60px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-content: center;
+    border-bottom: #e4e5e7;
+    &__logo{
+        margin-left: 18px;
+        margin-right: 32px;
+    }
+    &__twitter{
+        width: 232px;
+        height: 100%;
+        display: flex;
+        align-content: center;
+        margin-right: 40px;
+        
+        align-items: center;
+        img{
+            margin-right: 10px;
+        }
+        p{
+            margin-top: 7px;
+            letter-spacing: .3px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 19px;
+        }
+        a{
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 13px;
+            letter-spacing: .4px;
+            line-height: 20px;
+            display: flex;
+            align-items: center;
+            color: #535353;
+        }
+        button{
+            background-color: white;
+            border: 0px;
+            margin-left: 15px;
+        }
+    }
+    &__navigation{
+        width: 425px;
+        height: 100%;
+        margin-right: 510px;
+        margin-left: 1px;
+        
+        ul{
+            display: flex;
+        
+        align-items: center;
+            li{
+                list-style-type: none;
+                margin-top: 4px;
+                a{  
+                    position: relative;
+                    text-decoration: none;
+                    font-size: 14px;
+                    color: #222222;
+	                cursor: pointer;
+                    line-height: 1;
+                    &:after {
+                        display: block;
+	                    position: absolute;
+	                    left: 0; 
+                        width: 0;
+                        margin-top: 13px;
+	                    height: 3px; 
+	                    background-color: #2A63F5; 
+	                    content: "";
+                        transition: width 0.3s ease-out;
+                        
+                    }
+                    &:hover:after{
+                        width: 100%;
+                    }
+                }
+                
+            }
+        }
+    }
+    &__contacts{
+        width: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .header__profile{
+            height: 37px;
+            width: 37px;
+            background-color: #0B61FE;
+            border-radius: 50%;
+            text-align: center;
+            p{
+                margin-top: 8px;
+                color: white;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+
+.left-menu{
+    width: 60px;
+    height: 1000px;
+    background-color: white;
+    border-right: #d8d8d8;
+    
+    
+
+    &__icons{
+        width: 18px;
+        height: 127px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        top: 31px;
+        left: 20px;
+
+    }
+}
+
+
+
+
+.container{
+    width: 91.5%;
+    margin: auto;
+    height: 100%;
+    margin-top: 50px;
+    
+    h1{
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        color: #212529;
+        letter-spacing: .4px;
+        margin-bottom: 13px;
+        margin-right: 933px;
+    }
+
+    &__calendar{
+        width: 260px;
+        height: 43px;
+        background-color: white;
+        margin-top: -65px;
+        margin-left: 1060px;
+        display: flex;
+        align-items: center;
+        
+        p{
+            font-size: 14px;
+            margin-left: 10px;
+            margin-right: 28px;
+            letter-spacing: .44px;
+        }
+        img{
+            margin-right: 9px;
+        }
+    }
+    hr{
+        margin-top: 20px;
+    }
+
+    &__statistic{
+        width: 100%;
+        height: 148px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        
+        .yellow{
+            width: 230px;
+            height: 148px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: 8px;
+            p{
+                margin-top: 15px;
+                margin-left: 14px;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 21px;
+            }
+            h1{
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 26px;
+                margin-top: 12px;
+                margin-bottom: 7px;
+                margin-left: 20px;
+                letter-spacing: .6px;
+            }
+            &__footer{
+                height: 45px;
+                width: 100%;
+                border-top: 1px solid white;
+                button{
+                    width: 77px;
+                    height: 21px;
+                    background: rgba(255, 255, 255, 0);
+                    border-radius: 30px;
+                    border: 0;
+                    font-size: 11px;
+                    margin-top: 18px;
+                    margin-left: 13px;
+                    display: flex;
+                }
+                
+            }
+                background-color: #FFB800;
+                &__avatar{
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                    background-color: #fcc330;
+                    margin-left: 20px;
+                    margin-top: 11px;
+                    display: flex;
+                    align-items: center;
+                    img{
+                        margin: 10px 10px 10px 9px;
+                    }
+                }
+            }
+            .blue{
+                width: 230px;
+                height: 148px;
+                display: flex;
+                flex-wrap: wrap;
+                margin-right: 20px;
+                p{
+                    margin-top: 15px;
+                    margin-left: 15px;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: white;
+                }
+                h1{
+                    font-weight: bold;
+                    font-size: 36px;
+                    line-height: 26px;
+                    color: white;
+                        margin-bottom: 10px;
+                        margin-top: 14px;
+                        margin-left: 27px;
+                        letter-spacing: 1.5px;
+
+                }
+                &__footer{
+                    height: 45px;
+                    width: 100%;
+                    border-top: 1px solid white;
+                    
+                    button{
+                        width: 77px;
+                        height: 21px;
+                        background: rgba(255, 255, 255, 0.2);
+                        border-radius: 30px;
+                        border: 0;
+                        font-size: 11px;
+                        margin-top: 15px;
+                        margin-left: 20.5px;
+                        color: white;
+                    }
+                }
+                    background-color: #123CE1;
+                    &__avatar{
+                        width: 32px;
+                        height: 32px;
+                        border-radius: 50%;
+                        background-color: #3e60e4;
+                        margin-left: 27px;
+                        margin-top: 11px;
+                        display: flex;
+                        align-items: center;
+                        img{
+                            margin: 10px 10px 10px 10px;
+                        }
+                    }
+                }
+                .green{
+                    width: 230px;
+                    height: 148px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    p{  
+                        margin-top: 15px;
+                        margin-left: 14px;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 21px;
+                        color: white;
+                    }
+                    h1{
+                        font-weight: bold;
+                        font-size: 36px;
+                        line-height: 26px;
+                        color: white;
+                        margin-top: 22.5px;
+                        
+                        margin-left: 25px;
+                    }
+                    &__footer{
+                        height: 45px;
+                        width: 100%;
+                        border-top: 1px solid white;
+                        
+                        button{
+                            width: 77px;
+                            height: 21px;
+                            background: rgba(255, 255, 255, 0.2);
+                            border-radius: 30px;
+                            border: 0;
+                            font-size: 11px;
+                            margin-top: 10px;
+                            margin-left: 24px;
+                            color: white;
+                        }
+                    }
+                        background-color: #64D60B;
+                        &__avatar{
+                            width: 32px;
+                            height: 32px;
+                            border-radius: 50%;
+                            background-color: #80db39;
+                            margin-left: 26px;
+                            margin-top: 11px;
+                            display: flex;
+                            align-items: center;
+                            img{
+                                margin: 10px 10px 10px 10px;
+                            }
+                        }
+                    }
+
+                 .stages{
+                    width: 500px;
+                    height: 148px;
+                    background: #FFFFFF;
+                    border: 1px solid #ECEDF0;
+                    box-sizing: border-box;
+                    border-radius: 2px;
+                    &__rectange{
+                        width: 455px;
+                        height: 30px;
+                        margin-top: 40px;
+                        margin-left: 22px;
+                        margin-bottom: 22px;
+                        display: flex;
+                        border-radius: 2px;
+                        background-color: #123ce1;
+                        .lighter{
+                            position: absolute;
+                            width: 101.73px;
+                            height: 30px;
+                                               
+                            background: #A8BDFF;
+                            border-radius: 2px 0 0 2px;
+                        }
+                        .light{
+                            width: 120.22px;
+                            height: 30px;
+                            background: #4F7AFE;
+                            margin-left: 100px;
+                        }
+                    }
+
+                    span{
+                        font-size: 11px;
+                        line-height: 17px;
+
+                    }
+                 }
+            }
+            &__paid-sales{
+    
+                display: flex;
+            
+            
+                .platform{
+            
+                    width: 788px;
+                    height: 286px;
+                    background: #FFFFFF;
+                    border: 1px solid #ECEDF0;
+                    border-radius: 2px;
+                    margin-top: 40px;
+                    &__content{
+                        display: flex;
+                        .diagrama{
+                            height: 179px;
+                            width: 241px;
+                            display: flex;
+                            justify-content: space-between;
+                            flex-wrap: wrap;
+                            margin-left: 47px;
+                            margin-top: 17px;
+                            &__footer{
+                                width: 275px;
+                                height: 22px;
+                                font-size: 11px;
+                                color: #999999;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                            text-align: center;
+                                span{
+                                    width: 61px;
+                                }
+                            }
+                            div{
+                                height: 100%;
+                                width: 28px;
+                                display: flex;
+                                align-items: flex-end;
+                            }
+                        }
+                        .growth{
+                            width: 225px;
+                            height: 168px;
+                            margin-left: 146px;
+                            margin-top: 30px;
+                            h5{
+                                font-size: 11px;
+                            line-height: 12px;
+                            margin-top: 0px;
+                            }
+                            span{
+                                display: flex;
+                                justify-content: space-between;
+                                width: 100%;
+                                height: 22px;
+                                margin-bottom: 18px;
+                                font-size: 11px;
+                                color:  #999999;
+                                button{
+                                    width: 61px;
+                                    height: 21px;
+                                    border-radius: 30px;
+                                    border: none;
+                                    background-color: #DEDEDE;;
+                                }
+                            }
+                        }
+                    }
+                    h4{
+                        font-size: 14px;
+                        line-height: 21px;
+                        margin-left: 18px;
+                        margin-top: 9px;
+                    }
+                    hr{
+                        background-color: #dedede;
+                        border: none;
+                        height: 1px;
+                        margin-top: 10px;
+                        
+                    }
+            
+            }
+            
+            .sales{
+                 width: 500px;
+                height: 286px;
+                background: #FFFFFF;
+                border: 1px solid #ECEDF0;
+                box-sizing: border-box;
+                border-radius: 2px;
+                margin-top: 40px;
+                margin-left: 30px;
+
+                h4{
+                    font-size: 14px;
+                    line-height: 21px;
+                    margin-left: 18px;
+                    margin-top: 9px;
+                }
+                hr{
+                    background-color: #dedede;
+                    border: none;
+                    height: 1px;
+                    margin-top: 10px;
+
+                }
+
+                &__content{
+                    display: flex;
+                    img{
+                        margin-left: 43px;
+                        margin-top: 35px;
+                    }
+                    .sales__text{
+                        width: 215px;
+                        height: 178px;
+                        margin-left: 46px;
+                        margin-top: 15px;
+                        letter-spacing: 0.1px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        h5{
+                            width: 100%;
+                            height: 22px;
+                            font-size: 11px;
+                            line-height: 12px;
+                            margin-top: 0px;
+                            margin-left: 2px;
+                            margin-bottom: 15px;
+                        }
+                        .color{
+                            height: 129px;
+                            width: 16px;
+                            margin-left: 1px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            margin-bottom: 10px;
+                            div{
+                                width: 16px;
+                                height: 7px;
+                                border-radius: 30px;
+                            }
+                        }
+                        .txt{
+                            height: 131px;
+                            width: 158px;
+                            margin-left: 16px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            p{
+                                font-size: 11px;
+                                line-height: 12px;
+                                color: #999999;
+                            }
+                        }
+                        .percent{
+                            height: 130px;
+                            width: 22px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            p{
+                                font-size: 11px;
+                                line-height: 12px;
+
+                            }
+                        }
+
+                    }
+                }
+            }
+            }
+
+        .users{
+            width: 100%;
+            height: 307px;
+            background-color: white;
+            margin-top: 32px;
+            border: 1px solid #ECEDF0;
+            border-radius: 2px;
+            display: flex;
+            flex-wrap: wrap;
+            &__row{
+                width: 100%;
+                height: 60px;
+                border-top: 1px solid #dedede;
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                line-height: 21px;
+            }
+          h5{
+              font-size: 14px;
+              line-height: 21px;
+              color: #212529;
+              margin: 25px 1152px 17px 14px;
+          }
+            button{
+                width: 48px;
+                height: 28px;
+                margin-top: 18px;
+                background: none;
+                border: 0;
+            }
+        }
+     }
+
+
